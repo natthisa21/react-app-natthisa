@@ -1,8 +1,9 @@
 import type { MetaFunction } from "@remix-run/node";
-
+import MyContact from "./myContact";
+       
 export const meta: MetaFunction = () => {
   return [
-    { title: "New Remix App" },
+    { title: "soda Remix App" },
     { name: "description", content: "Welcome to Remix!" },
   ];
 };
@@ -50,6 +51,7 @@ export default function Index() {
         <li>class: Information Technology</li>
         <li>E-mail: natthisa.suk@rmutto.ac.th</li>
       </ul>
+      <MyContact />
     </div>
   );
 }
